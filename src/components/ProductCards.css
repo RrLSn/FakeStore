@@ -1,0 +1,11 @@
+.productCard{
+    @apply w-[22rem] h-[30rem] flex flex-col justify-between p-4 rounded-md cursor-pointer
+}
+
+.productCard:hover{
+    @apply border shadow-inner
+}
+
+.productCard img{
+    @apply w-[18rem] h-[20rem]
+}

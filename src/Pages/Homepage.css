@@ -1,0 +1,15 @@
+.wrapper{
+    @apply min-w-[90vw] min-h-[100vh] p-5 bg-[#f1f1f2]
+}
+
+.wrapper h1{
+    @apply text-3xl font-bold
+}
+
+.productWrapper{
+    @apply lg:w-[95vw] w-[90vw] min-h-[70vh] flex flex-col bg-[#ffffff] mt-20 rounded-md m-auto
+}
+
+.header{
+    @apply w-full h-[5rem] border-b-2 border-[#f1f1f2] flex flex-col justify-center px-6
+}
