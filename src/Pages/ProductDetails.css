@@ -1,9 +1,9 @@
 .detailsWrapper{
-    @apply w-[80vw] min-h-[70vh] bg-[#ffffff] m-auto lg:flex block justify-between px-5 py-10
+    @apply w-[80vw] min-h-[70vh] bg-[#000000] m-auto lg:flex block justify-between px-5 py-10 mt-20 border border-[#5d5d5d] rounded-lg text-white
 }
 
 .productInfo{
-    @apply lg:w-[55vw] w-full lg:max-h-[50vh] h-[max-content] p-5 flex flex-col
+    @apply lg:w-[30vw] w-full lg:max-h-[50vh] h-[max-content] p-5 flex flex-col
 }
 
 .productInfo h1{
@@ -11,5 +11,13 @@
 }
 
 .cartButton{
-    @apply w-full py-5 text-center bg-yellow-900 font-bold text-white rounded-md
+    @apply w-full h-[max-content] py-5 text-center bg-blue-700 font-bold text-white rounded-[20px] flex gap-[8rem] px-5
+}
+
+.cartButton img{
+    @apply w-[1.5vw]
+}
+
+.cartButton:hover{
+    @apply bg-blue-800
 }

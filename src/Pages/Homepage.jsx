@@ -4,6 +4,7 @@ import axios from 'axios'
 import ProductCards from '../components/ProductCards'
 import { datas } from '../data'
 import { Link } from 'react-router-dom'
+import NavBar from '../components/NavBar'
 
 const Homepage = () => {
     const [products, setProducts] = useState([])
@@ -27,26 +28,17 @@ const Homepage = () => {
 
   return (
     <div className='wrapper'>
-        <nav className='w-full flex items-center text-white justify-between'>
-            <h1>FakeStore.<sub className='italic'>ng</sub></h1>
-
-            <div className='flex w-[25rem] justify-between rounded-md border border-[#5d5d5d] p-2'>
-                <input type="text" placeholder='Search for products' className='bg-transparent focus:outline-none w-full' />
-                <img className='w-[1rem]' src="/Image/search.svg" alt="" />
-            </div>
-
-            <div className='w-[2rem] border border-[#5d5d5d] p-2'><img src="/Image/cart.svg" alt="" /></div>
-        </nav>
+        <NavBar />
 
         <section>
-            <div className='text-white w-[10vw]'>
+            <div>
                 <p className='text-[#5d5d5d]'>Collections</p>
 
-                <div>
+                <div className='collection'>
                     <p>Men</p>
                     <p>Women</p>
                     <p>Electronics</p>
-                    <p>jeweleries</p>
+                    <p>Jeweleries</p>
                 </div>
             </div>
             
@@ -65,10 +57,10 @@ const Homepage = () => {
                 }
             </main>
 
-            <div className='w-[10vw] text-white'>
+            <div>
                 <p className='text-[#5d5d5d]'>Sort by</p>
 
-                <div>
+                <div className='sort'>
                     <p>Relevance</p>
                     <p>Trending</p>
                     <p>Price: Low to High</p>

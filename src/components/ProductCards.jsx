@@ -8,12 +8,12 @@ const ProductCards = (props) => {
                 <div className='w-[19rem] h-[max-content] m-auto flex justify-center'>
                     <img src={image} alt="Product's image" />
                 </div>
-                {/* <div className='w-[max-content] px-2 py-1 bg-slate-600 rounded-md mt-0 text-white text-center'>
-                    <p>{category}</p>
-                </div> */}
-                <div className='flex'>
-                    <p>{name}</p>
-                    <p>${price}</p>
+
+                <div className='w-[100%] h-[8vh]'>
+                    <div className='min-w-[20vw] p-2 flex justify-between rounded-[20px] border text-[0.7rem] font-bold items-center'>
+                        <p>{name}</p>
+                        <p className='w-[5vw] bg-blue-600 rounded-[15px] text-center px-2 py-2'>{price}USD</p>
+                    </div>
                 </div>
             </div>
   )

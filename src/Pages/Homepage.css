@@ -2,14 +2,25 @@
     @apply min-w-[90vw] min-h-[100vh] p-5 bg-[#171717]
 }
 
-.wrapper h1{
-    @apply text-3xl font-bold
-}
-
 section{
     @apply w-full min-h-[80vh] flex mt-16 justify-between
 }
 
 .productWrapper{
     @apply h-[100%] w-[75vw] flex flex-wrap gap-6 justify-center
+}
+
+.collection, 
+.sort{
+    @apply text-white w-[10vw]
+}
+
+.collection p, 
+.sort p{
+    @apply my-2 cursor-pointer
+}
+
+.collection p:hover, 
+.sort p:hover{
+    @apply underline-offset-4 underline
 }

@@ -3,6 +3,7 @@ import './ProductDetails.css'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import { datas } from '../data'
+import NavBar from '../components/NavBar'
 
 const ProductDetails = () => {
 
@@ -26,13 +27,11 @@ const ProductDetails = () => {
 
 
   return (
-    <div className='bg-[#f1f1f2] w-screen lg:h-screen h-[max-content] p-5'>
-      <div className='w-[max-content] text-3xl font-bold mb-20'>
-        <h1>FakeStore.<sub className='italic'>ng</sub></h1>
-      </div>
-
+    <div className='bg-[#171717] w-screen lg:h-screen h-[max-content] p-5'>
+      <NavBar />
+  
       <main className='detailsWrapper'>
-          <img className='w-[20rem] h-[22rem]' src={products.image} alt="Product's Image" />
+          <img className='w-[40rem] h-[30rem]' src={products.image} alt="Product's Image" />
 
         <div className='productInfo'>
           <div className='w-[max-content] px-5 font-bold py-1 bg-slate-600 rounded-md text-white text-center'>
@@ -43,7 +42,10 @@ const ProductDetails = () => {
           <h2 className='font-semibold'>{products.description}</h2>
           <h1>${products.price}</h1>
 
-          <div className='cartButton'>Add to cart</div>
+          <div className='cartButton'>
+            <img src="/Image/add-line.svg" alt="" />
+            <p>Add to cart</p>
+          </div>
         </div>
       </main>
     </div>
