@@ -1,15 +1,15 @@
 .wrapper{
-    @apply min-w-[90vw] min-h-[100vh] p-5 bg-[#f1f1f2]
+    @apply min-w-[90vw] min-h-[100vh] p-5 bg-[#171717]
 }
 
 .wrapper h1{
     @apply text-3xl font-bold
 }
 
-.productWrapper{
-    @apply lg:w-[95vw] w-[90vw] min-h-[70vh] flex flex-col bg-[#ffffff] mt-20 rounded-md m-auto
+section{
+    @apply w-full min-h-[80vh] flex mt-16 justify-between
 }
 
-.header{
-    @apply w-full h-[5rem] border-b-2 border-[#f1f1f2] flex flex-col justify-center px-6
+.productWrapper{
+    @apply h-[100%] w-[75vw] flex flex-wrap gap-6 justify-center
 }

@@ -27,36 +27,55 @@ const Homepage = () => {
 
   return (
     <div className='wrapper'>
-        <div className='w-[max-content]'>
+        <nav className='w-full flex items-center text-white justify-between'>
             <h1>FakeStore.<sub className='italic'>ng</sub></h1>
-        </div>
 
-        <main className='productWrapper'>
-            <div className='header'>
-                <h2 className='font-semibold text-[1.3rem]'>FakeStore products</h2>
-                <p>{products.length} products found</p>
+            <div className='flex w-[25rem] justify-between rounded-md border border-[#5d5d5d] p-2'>
+                <input type="text" placeholder='Search for products' className='bg-transparent focus:outline-none w-full' />
+                <img className='w-[1rem]' src="/Image/search.svg" alt="" />
             </div>
-            {
-                isLoading? (
-                    <div className='w-[100vw] h-[50vh] flex justify-center items-center'>Loading...</div>
-                ) : (
-                    <div className='w-[100%] h-[100%] flex flex-wrap py-10 gap-x-12 gap-y-10 justify-center'>
-                        {
-                            products.map((product) => (
-                               <Link to={`/productDetails/${product.id}`} key={product.id}>
-                                    <ProductCards
-                                        name={product.title}
-                                        price={product.price}
-                                        image={product.image}
-                                        category={product.category}
-                                    />
-                               </Link>
-                            ))
-                        }
-                    </div>
-                )
-            }
-        </main>
+
+            <div className='w-[2rem] border border-[#5d5d5d] p-2'><img src="/Image/cart.svg" alt="" /></div>
+        </nav>
+
+        <section>
+            <div className='text-white w-[10vw]'>
+                <p className='text-[#5d5d5d]'>Collections</p>
+
+                <div>
+                    <p>Men</p>
+                    <p>Women</p>
+                    <p>Electronics</p>
+                    <p>jeweleries</p>
+                </div>
+            </div>
+            
+            <main className='productWrapper'>
+                {
+                    products.map((product) => (
+                        <Link to={`/productDetails/${product.id}`} key={product.id}>
+                            <ProductCards
+                                name={product.title}
+                                price={product.price}
+                                image={product.image}
+                                category={product.category}
+                            />
+                        </Link>
+                    ))
+                }
+            </main>
+
+            <div className='w-[10vw] text-white'>
+                <p className='text-[#5d5d5d]'>Sort by</p>
+
+                <div>
+                    <p>Relevance</p>
+                    <p>Trending</p>
+                    <p>Price: Low to High</p>
+                    <p>Price: High to Low</p>
+                </div>
+            </div>
+        </section>
     </div>
   )
 }

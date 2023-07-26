@@ -1,9 +1,9 @@
 .productCard{
-    @apply w-[22rem] h-[30rem] flex flex-col justify-between p-4 rounded-md cursor-pointer
+    @apply w-[25rem] h-[30rem] flex flex-col justify-between rounded-md cursor-pointer text-white bg-black
 }
 
 .productCard:hover{
-    @apply border shadow-inner
+    @apply border-[1.5px] border-blue-800
 }
 
 .productCard img{
