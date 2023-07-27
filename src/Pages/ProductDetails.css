@@ -1,9 +1,18 @@
 .detailsWrapper{
-    @apply w-[80vw] min-h-[70vh] bg-[#000000] m-auto lg:flex block justify-between px-5 py-10 mt-20 border border-[#5d5d5d] rounded-lg text-white
+    @apply w-[85vw] min-h-[80vh] bg-[#000000] m-auto lg:flex block justify-between px-7 py-10 mt-20 border border-[#5d5d5d] rounded-lg text-white
+}
+
+.detailsWrapper div:nth-child(1) img{
+    transition: transform 1.5s ease;
+    @apply w-[40rem] h-[30rem]
+}
+
+.detailsWrapper div:nth-child(1) img:hover{
+    transform: scale(1.2);
 }
 
 .productInfo{
-    @apply lg:w-[30vw] w-full lg:max-h-[50vh] h-[max-content] p-5 flex flex-col
+    @apply lg:w-[35vw] w-full h-[max-content] p-5
 }
 
 .productInfo h1{
@@ -11,7 +20,7 @@
 }
 
 .cartButton{
-    @apply w-full h-[max-content] py-5 text-center bg-blue-700 font-bold text-white rounded-[20px] flex gap-[8rem] px-5
+    @apply w-full h-[max-content] py-4 text-center bg-blue-700 font-bold text-white rounded-full flex gap-[12rem] px-5 cursor-pointer
 }
 
 .cartButton img{

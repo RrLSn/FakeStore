@@ -31,16 +31,20 @@ const ProductDetails = () => {
       <NavBar />
   
       <main className='detailsWrapper'>
-          <img className='w-[40rem] h-[30rem]' src={products.image} alt="Product's Image" />
+        <div className='w-[40rem] overflow-hidden h-[max-content]'><img src={products.image} alt="Product's Image" /></div>
 
         <div className='productInfo'>
-          <div className='w-[max-content] px-5 font-bold py-1 bg-slate-600 rounded-md text-white text-center'>
-            <p>{products.category}</p>
+          <div className='border-b pb-5 border-[#5d5d5d]'>
+            <div className='flex items-center justify-between'>
+              <h1>{products.title}</h1>
+              <div className='w-[max-content] h-[2rem] px-5 font-bold py-1 bg-slate-600 rounded-md text-white text-center'>
+                <p>{products.category}</p>
+              </div>
+            </div>
+            <div className='w-[7rem] p-2 bg-blue-700 text-center rounded-full'><p>{products.price}USD</p></div>
           </div>
-          
-          <h1>{products.title}</h1>
-          <h2 className='font-semibold'>{products.description}</h2>
-          <h1>${products.price}</h1>
+
+          <h2 className='font-semibold text-[#767676] my-4'>{products.description}</h2>
 
           <div className='cartButton'>
             <img src="/Image/add-line.svg" alt="" />

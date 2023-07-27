@@ -1,15 +1,16 @@
 .productCard{
-    @apply w-[25rem] h-[30rem] flex flex-col justify-between rounded-lg cursor-pointer text-white bg-black p-2
+    @apply w-[25rem] h-[30rem] flex flex-col justify-between rounded-lg cursor-pointer text-white bg-black p-5 border-transparent transition
 }
 
 .productCard:hover{
-    @apply border-[1.5px] border-blue-800
+    @apply border-[1.5px] border-blue-800 outline-none
 }
 
 .productCard img{
+    transition: transform 1.5s ease;
     @apply w-full h-[20rem]
 }
-/* 
+
 .productCard img:hover{
-    @apply scale-105 ease-out
-} */
+    transform: scale(1.2);
+}
