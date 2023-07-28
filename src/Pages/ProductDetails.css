@@ -1,26 +1,26 @@
 .detailsWrapper{
-    @apply w-[85vw] min-h-[80vh] bg-[#000000] m-auto lg:flex block justify-between px-7 py-10 mt-20 border border-[#5d5d5d] rounded-lg text-white
+    @apply lg:w-[85vw] w-full min-h-[80vh] bg-[#000000] m-auto lg:flex block justify-between px-7 py-10 mt-20 border border-[#5d5d5d] rounded-lg text-white
 }
 
 .detailsWrapper div:nth-child(1) img{
     transition: transform 1.5s ease;
-    @apply w-[40rem] h-[30rem] hover:scale-110
+    @apply lg:w-[40vw] w-full h-[30rem] hover:scale-110
 }
 
 .productInfo{
-    @apply lg:w-[35vw] w-full h-[max-content] p-5
+    @apply lg:w-[39vw] w-full h-[max-content] p-5
 }
 
 .productInfo h1{
-    @apply text-3xl font-bold my-7 w-[20vw]
+    @apply lg:text-3xl text-2xl font-bold lg:my-7 lg:w-[26vw]
 }
 
 .cartButton{
-    @apply w-full h-[max-content] py-4 text-center bg-blue-700 font-bold text-white rounded-full flex gap-[12rem] px-5 cursor-pointer
+    @apply w-full h-[max-content] py-4 text-center bg-blue-700 text-white rounded-full flex lg:gap-[12rem] gap-14 px-5 cursor-pointer
 }
 
 .cartButton img{
-    @apply w-[1.5vw]
+    @apply lg:w-[1.5vw] w-[5vw]
 }
 
 .cartButton:hover{

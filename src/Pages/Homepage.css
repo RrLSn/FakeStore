@@ -3,7 +3,7 @@
 }
 
 section{
-    @apply w-full min-h-[80vh] lg:flex mt-16 justify-between
+    @apply w-full min-h-[80vh] flex lg:flex-row flex-col mt-16 justify-between
 }
 
 .productWrapper{
@@ -12,7 +12,7 @@ section{
 
 .collection, 
 .sort{
-    @apply text-white w-[10vw] flex flex-col
+    @apply text-white lg:w-[10vw] w-full flex flex-col lg:bg-transparent bg-black p-2
 }
 
 .collection li, 
