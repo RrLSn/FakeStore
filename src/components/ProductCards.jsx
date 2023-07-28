@@ -14,9 +14,9 @@ const ProductCards = (props) => {
                 </div>
 
                 <div className='w-[80%] h-[7vh]'>
-                    <div className='w-[15vw] p-2 flex justify-between rounded-full border border-[#5d5d5d] blur-0 text-[0.8rem] font-bold items-center m-auto'>
+                    <div className='w-[max-content] p-2 flex gap-3 rounded-full border border-[#5d5d5d] blur-0 text-[0.8rem] font-bold items-center m-auto'>
                         <p>{ fullstring === false? truncate(name) : name }</p>
-                        <p className='w-[5vw] bg-blue-600 rounded-full text-center px-2 py-2'>{price}USD</p>
+                        <p className='w-[max-content] bg-blue-600 rounded-full text-center px-2 py-2'>{price}USD</p>
                     </div>
                 </div>
             </div>

@@ -4,11 +4,7 @@
 
 .detailsWrapper div:nth-child(1) img{
     transition: transform 1.5s ease;
-    @apply w-[40rem] h-[30rem]
-}
-
-.detailsWrapper div:nth-child(1) img:hover{
-    transform: scale(1.2);
+    @apply w-[40rem] h-[30rem] hover:scale-110
 }
 
 .productInfo{
@@ -16,7 +12,7 @@
 }
 
 .productInfo h1{
-    @apply text-3xl font-bold my-7
+    @apply text-3xl font-bold my-7 w-[20vw]
 }
 
 .cartButton{

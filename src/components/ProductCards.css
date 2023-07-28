@@ -8,9 +8,5 @@
 
 .productCard img{
     transition: transform 1.5s ease;
-    @apply w-full h-[20rem]
-}
-
-.productCard img:hover{
-    transform: scale(1.2);
+    @apply w-full h-[20rem] hover:scale-110
 }

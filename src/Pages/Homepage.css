@@ -3,24 +3,29 @@
 }
 
 section{
-    @apply w-full min-h-[80vh] flex mt-16 justify-between
+    @apply w-full min-h-[80vh] lg:flex mt-16 justify-between
 }
 
 .productWrapper{
-    @apply h-[100%] w-[75vw] flex flex-wrap gap-6 justify-center
+    @apply h-[100%] w-[75vw] flex flex-wrap gap-6 justify-center m-auto
 }
 
 .collection, 
 .sort{
-    @apply text-white w-[10vw]
+    @apply text-white w-[10vw] flex flex-col
 }
 
-.collection p, 
-.sort p{
-    @apply my-2 cursor-pointer
+.collection li, 
+.sort li{
+    @apply my-1 cursor-pointer
 }
 
-.collection p:hover, 
-.sort p:hover{
+.collection a:hover, 
+.sort a:hover{
+    @apply underline-offset-4 underline
+}
+
+.collection a:focus, 
+.sort a:focus{
     @apply underline-offset-4 underline
 }

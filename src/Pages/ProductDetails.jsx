@@ -27,7 +27,7 @@ const ProductDetails = () => {
 
 
   return (
-    <div className='bg-[#171717] w-screen lg:h-screen h-[max-content] p-5'>
+    <div className='bg-[#171717] w-full lg:h-[max-content] h-[max-content] p-5'>
       <NavBar />
   
       <main className='detailsWrapper'>
@@ -41,7 +41,7 @@ const ProductDetails = () => {
                 <p>{products.category}</p>
               </div>
             </div>
-            <div className='w-[7rem] p-2 bg-blue-700 text-center rounded-full'><p>{products.price}USD</p></div>
+            <div className='w-[7rem] p-2 bg-blue-700 text-center rounded-full font-bold'><p>{products.price}USD</p></div>
           </div>
 
           <h2 className='font-semibold text-[#767676] my-4'>{products.description}</h2>
