@@ -83,10 +83,12 @@ const Homepage = () => {
 
    const handleCollectionDropDown = () => {
     setCollectionDropDown(!collectionDropDown)
+    setSortDropDown(false)
    }
 
    const handleSortDropDown = () => {
     setSortDropDown(!sortDropDown)
+    setCollectionDropDown(false)
    }
 
   return (
@@ -97,9 +99,9 @@ const Homepage = () => {
 
             <div className='order-1'>
                 <p className='text-[#5d5d5d] lg:block hidden'>Collections</p>
-                <div className='drop-down'>
+                <div className='drop-down' onClick={handleCollectionDropDown}>
                     <div>{filteredCriteria}</div>
-                    <img src="/Image/arrow-down.svg" alt="arrow" className='w-[5vw]' onClick={handleCollectionDropDown} />
+                    <img src="/Image/arrow-down.svg" alt="arrow" className='w-[5vw]' />
                 </div>
                 <ul className={`collection ${collectionDropDown ? 'dropped' : ''}`}>
                         <li><a href='#' onClick={() => handleFilter('All')}>All</a></li>
@@ -128,9 +130,9 @@ const Homepage = () => {
             <div className='lg:order-3 order-2'>
                 <p className='text-[#5d5d5d] lg:block hidden'>Sort by</p>
 
-                <div className='drop-down'>
+                <div className='drop-down' onClick={handleSortDropDown}>
                     <div>{sortCriteria}</div>
-                    <img src="/Image/arrow-down.svg" alt="arrow" className='w-[5vw]' onClick={handleSortDropDown} />
+                    <img src="/Image/arrow-down.svg" alt="arrow" className='w-[5vw]' />
                 </div>
 
                 <ul className={`sort ${sortDropDown ? 'dropped': ''}`}>

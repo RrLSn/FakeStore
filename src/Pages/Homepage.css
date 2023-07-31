@@ -16,7 +16,7 @@ section{
 
 .collection, 
 .sort{
-    @apply text-white lg:w-[10vw] h-[25vh] w-full lg:bg-transparent bg-black p-2 hidden lg:block
+    @apply text-white lg:w-[10vw] h-[25vh] w-[92vw] lg:bg-transparent bg-black lg:p-2 hidden lg:block p-3
 }
 
 .collection li, 
