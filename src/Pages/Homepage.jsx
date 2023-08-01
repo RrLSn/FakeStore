@@ -9,8 +9,10 @@ import NavBar from '../components/NavBar'
 const Homepage = () => {
     const [products, setProducts] = useState([])
     const [filteredItems, setFilteredItems] = useState([])
+
     const [sortCriteria, setSortCriteria] = useState('')
     const [filteredCriteria, setFilteredCriteria] = useState('')
+    
     const [collectionDropDown, setCollectionDropDown] = useState(false)
     const [sortDropDown, setSortDropDown] = useState(false)
 

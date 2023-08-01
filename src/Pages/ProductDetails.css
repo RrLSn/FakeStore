@@ -4,7 +4,7 @@
 
 .detailsWrapper div:nth-child(1) img{
     transition: transform 1.5s ease;
-    @apply lg:w-[40vw] w-full h-[30rem] hover:scale-110
+    @apply lg:w-[40vw] w-full h-[30rem] hover:scale-125
 }
 
 .productInfo{

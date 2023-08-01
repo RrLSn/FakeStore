@@ -1,16 +1,27 @@
 import React, { useState } from 'react'
 import "./ProductCards.css"
 import { truncate } from '../utils'
+import { animated, useSpring } from '@react-spring/web'
 
 const ProductCards = (props) => {
     const {image, name, price} = props
+    const [isHovered, setIsHovered] = useState(false)
 
     const [fullstring, setFullString] = useState(false)
+    const isHovereProps = useSpring({
+        transform: isHovered ? 'scale(1.2)' : 'scale(1)'
+    })
    
   return (
             <div className='productCard'>
                 <div className='w-[21rem] h-[max-content] m-auto flex justify-center overflow-hidden'>
-                    <img src={image} alt="Product's image" />
+                    <animated.img
+                    src={image}
+                    style={isHovereProps}
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}
+                    alt="Products's Image"
+                    />
                 </div>
 
                 <div className='w-[80%] h-[7vh]'>
