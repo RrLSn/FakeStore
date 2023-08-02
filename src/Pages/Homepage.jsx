@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import NavBar from '../components/NavBar'
 
 const Homepage = () => {
+    
     const [products, setProducts] = useState([])
     const [filteredItems, setFilteredItems] = useState([])
 
@@ -32,53 +33,53 @@ const Homepage = () => {
     },[])
 
     const handleFilter = (criterion) => {
-        if(criterion === `men's clothing`){
+        if(criterion === "men's clothing"){
             const filtered = products.filter((product) => product.category === criterion)
             setFilteredItems(filtered)
-            setFilteredCriteria('Men')
+            setFilteredCriteria("Men")
             setCollectionDropDown(false)
-        } else if (criterion === `jewelery`){
+        } else if (criterion === "jewelery"){
             const filtered = products.filter((product) => product.category === criterion)
             setFilteredItems(filtered)
-            setFilteredCriteria('Jeweleries')
+            setFilteredCriteria("Jeweleries")
             setCollectionDropDown(false)
-        } else if (criterion === `women's clothing`){
+        } else if (criterion === "women's clothing"){
             const filtered = products.filter((product) => product.category === criterion)
             setFilteredItems(filtered)
-            setFilteredCriteria('Women')
+            setFilteredCriteria("Women")
             setCollectionDropDown(false)
-        } else if (criterion === `electronics`){
+        } else if (criterion === "electronics"){
             const filtered = products.filter((product) => product.category === criterion)
             setFilteredItems(filtered)
-            setFilteredCriteria('Electronics')
+            setFilteredCriteria("Electronics")
             setCollectionDropDown(false)
-        } else if(criterion === 'All'){
+        } else if(criterion === "All"){
             setFilteredItems(products)
-            setFilteredCriteria('All')
+            setFilteredCriteria("All")
             setCollectionDropDown(false)
         }
     }
 
    const handleSort = (criterion) => {
-    if (criterion === 'ascPrice'){
+    if (criterion === "ascPrice"){
         const sorted = [...filteredItems].sort((a, b) => a.price - b.price)
         setFilteredItems(sorted)
-        setSortCriteria('Price: Low to High')
+        setSortCriteria("Price: Low to High")
         setSortDropDown(false)
-    } else if (criterion === 'descPrice'){
+    } else if (criterion === "descPrice"){
         const sorted = [...filteredItems].sort((a, b) => b.price - a.price)
         setFilteredItems(sorted)
-        setSortCriteria('Price: High to Low')
+        setSortCriteria("Price: High to Low")
         setSortDropDown(false)
-    } else if (criterion === 'trending'){
+    } else if (criterion === "trending"){
         const sorted = [...filteredItems].sort((a, b) => a.rating.count - b.rating.count)
         setFilteredItems(sorted)
-        setSortCriteria('Trending')
+        setSortCriteria("Trending")
         setSortDropDown(false)
-    } else if (criterion === 'relevance'){
+    } else if (criterion === "relevance"){
         const sorted = [...filteredItems].sort((a, b) => a.rating.rate - b.rating.rate)
         setFilteredItems(sorted)
-        setSortCriteria('Relevance')
+        setSortCriteria("Relevance")
         setSortDropDown(false)
     }
    }
@@ -94,7 +95,7 @@ const Homepage = () => {
    }
 
   return (
-    <div className='wrapper'>
+    <div className="wrapper">
         <NavBar />
 
         <section>
@@ -106,11 +107,11 @@ const Homepage = () => {
                     <img src="/Image/arrow-down.svg" alt="arrow" className='w-[5vw]' />
                 </div>
                 <ul className={`collection ${collectionDropDown ? 'dropped' : ''}`}>
-                        <li><a href='#' onClick={() => handleFilter('All')}>All</a></li>
-                        <li><a href='#' onClick={() =>handleFilter(`men's clothing`)}>Men</a></li>
-                        <li><a href='#' onClick={() => handleFilter(`women's clothing`)}>Women</a></li>
-                        <li><a href='#' onClick={() => handleFilter(`electronics`)}>Electronics</a></li>
-                        <li><a href='#' onClick={() => handleFilter(`jewelery`)}>Jeweleries</a></li>
+                        <li><a href='#' onClick={() => handleFilter("All")}>All</a></li>
+                        <li><a href='#' onClick={() =>handleFilter("men's clothing")}>Men</a></li>
+                        <li><a href='#' onClick={() => handleFilter("women's clothing")}>Women</a></li>
+                        <li><a href='#' onClick={() => handleFilter("electronics")}>Electronics</a></li>
+                        <li><a href='#' onClick={() => handleFilter("jewelery")}>Jeweleries</a></li>
                     </ul>
             </div>
             
@@ -138,10 +139,10 @@ const Homepage = () => {
                 </div>
 
                 <ul className={`sort ${sortDropDown ? 'dropped': ''}`}>
-                        <li><a href='#' onClick={() => handleSort('relevance')}>Relevance</a></li>
-                        <li><a href='#' onClick={() => handleSort('trending')}>Trending</a></li>
-                        <li><a href='#' onClick={() => handleSort('ascPrice')}>Price: Low to High</a></li>
-                        <li><a href='#' onClick={() => handleSort('descPrice')}>Price: High to Low</a></li>
+                        <li><a href='#' onClick={() => handleSort("relevance")}>Relevance</a></li>
+                        <li><a href='#' onClick={() => handleSort("trending")}>Trending</a></li>
+                        <li><a href='#' onClick={() => handleSort("ascPrice")}>Price: Low to High</a></li>
+                        <li><a href='#' onClick={() => handleSort("descPrice")}>Price: High to Low</a></li>
                     </ul>
             </div>
         </section>

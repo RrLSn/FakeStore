@@ -1,6 +1,7 @@
 
 const NavBar = () => {
 
+
   return (
     <nav className='w-full flex items-center text-white justify-between'>
             <a href="/"><h1 className='lg:text-3xl text-2xl font-bold'>FakeStore.<sub className='italic'>ng</sub></h1></a>
