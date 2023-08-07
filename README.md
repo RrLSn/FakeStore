@@ -6,7 +6,12 @@
   Product can be sorted with the Relevance, Trending, Price ranging from High to Low and from Low to High. Also, Product and be filtered by Men, Women, Electronics and Jeweleries.
 
 # TECH / FRAMEWORK USED
-  
+  - React
+  - Vite
+  - TailwindCSS
+  - React-Spring
+  - Axios
+  - React-Router-Dom
 
   [Preview live](https://regal-meerkat-a806fb.netlify.app/)
   ![Screenshot](/public/Image/Screenshot%202023-08-07%20135516.png)
