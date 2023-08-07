@@ -6,10 +6,15 @@
 
 # TECH / FRAMEWORK USED
   .React
+  <br />
   .Vite
+  <br />
   .TailwindCSS
+  <br />
   .React-Spring
+  <br />
   .Axios
+  <br />
   .React-Router-Dom
 
   [Preview live](https://regal-meerkat-a806fb.netlify.app/)
@@ -17,4 +22,4 @@
   ![Screenshot]()
 
   # Refrence 
-    Inspired by (https://demo.vercel.store/search/bags)
+    [Inspired by](https://demo.vercel.store)
