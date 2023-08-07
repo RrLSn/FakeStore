@@ -38,10 +38,10 @@ const Homepage = () => {
             setFilteredItems(filtered)
             setFilteredCriteria("Men")
             setCollectionDropDown(false)
-        } else if (criterion === "jewelery"){
+        } else if (criterion === "jewelry"){
             const filtered = products.filter((product) => product.category === criterion)
             setFilteredItems(filtered)
-            setFilteredCriteria("Jeweleries")
+            setFilteredCriteria("Jewelries")
             setCollectionDropDown(false)
         } else if (criterion === "women's clothing"){
             const filtered = products.filter((product) => product.category === criterion)
@@ -111,7 +111,7 @@ const Homepage = () => {
                         <li><a href='#' onClick={() =>handleFilter("men's clothing")}>Men</a></li>
                         <li><a href='#' onClick={() => handleFilter("women's clothing")}>Women</a></li>
                         <li><a href='#' onClick={() => handleFilter("electronics")}>Electronics</a></li>
-                        <li><a href='#' onClick={() => handleFilter("jewelery")}>Jeweleries</a></li>
+                        <li><a href='#' onClick={() => handleFilter("jewelry")}>Jewelries</a></li>
                     </ul>
             </div>
             
