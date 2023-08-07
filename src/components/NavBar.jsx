@@ -8,7 +8,7 @@ const NavBar = () => {
 
             <form className='lg:flex  hidden w-[25rem] justify-between rounded-md border border-[#5d5d5d] p-2'>
                 <input 
-                type="text" 
+                type="search" 
                 placeholder='Search for products' 
                 className='bg-transparent focus:outline-none w-full'
                 />
