@@ -2,8 +2,8 @@
   Fake store built with React, Vite
 
 # Description 
-  This store display all available products with price, and allows you to select any product of your choice. Also, the store route to a product details page, the pages show the information of the selected product with Add To Cart button. The website is responsive and fits on mobile.
-  Product can be sorted with the Relevance, Trending, Price ranging from High to Low and from Low to High. Also, Product and be filtered by Men, Women, Electronics and Jeweleries.
+  This store display all available products with price, and allows you to select any product of your choice. Also, the store route to a product details page, page shows the information of the selected product with Add To Cart button. The website is responsive and fits on mobile.
+  Products can be sorted with the Relevance, Trending, and Price ranging from High to Low and from Low to High. Also, Products and be filtered by Men, Women, Electronics and Jewelries.
 
 # TECH / FRAMEWORK USED
   - React
