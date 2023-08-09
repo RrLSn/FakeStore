@@ -99,7 +99,6 @@ const Homepage = () => {
         <NavBar />
 
         <section>
-
             <div className='order-1'>
                 <p className='text-[#5d5d5d] lg:block hidden'>Collections</p>
                 <div className='drop-down' onClick={handleCollectionDropDown}>

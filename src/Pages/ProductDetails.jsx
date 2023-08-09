@@ -27,11 +27,15 @@ const ProductDetails = () => {
 
 
   return (
-    <div className='bg-[#171717] w-full lg:h-[max-content] h-[max-content] p-5'>
+    <div className='bg-[#171717] min-w-[90vw] min-h-[100vh] p-5'>
       <NavBar />
   
       <main className='detailsWrapper'>
-        <div className='lg:w-[40vw] w-full overflow-hidden h-[max-content]'><img src={products.image} alt="Product's Image" /></div>
+        <div className='lg:w-[40vw] lg:h-full p-4 w-full overflow-hidden h-full flex justify-center items-center'>
+          <div className=' w-[23rem] h-[30rem] flex justify-center overflow-hidden'>
+          <img src={products.image} alt="Product's Image" />
+          </div>
+        </div>
 
         <div className='productInfo'>
           <div className='border-b pb-5 border-[#5d5d5d]'>
@@ -42,14 +46,14 @@ const ProductDetails = () => {
               </div>
             </div>
 
-            <div className='w-[7rem] p-2 bg-blue-700 text-center rounded-full'><p>{products.price}USD</p></div>
+            <div className='w-[7rem] p-2 bg-blue-700 text-center rounded-full'><p>${products.price}USD</p></div>
           </div>
 
           <h2 className='text-[#767676] my-4'>{products.description}</h2>
 
           <div className='cartButton'>
             <img src="/Image/add-line.svg" alt="" />
-            <p>Add to cart</p>
+            <p className='m-auto'>Add to cart</p>
           </div>
         </div>
       </main>

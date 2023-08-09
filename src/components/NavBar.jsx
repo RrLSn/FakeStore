@@ -3,10 +3,10 @@ const NavBar = () => {
 
 
   return (
-    <nav className='w-full flex items-center text-white justify-between'>
+    <nav className='lg:w-[95vw] w-[92vw] flex items-center text-white justify-between'>
             <a href="/"><h1 className='lg:text-3xl text-2xl font-bold'>FakeStore.<sub className='italic'>ng</sub></h1></a>
 
-            <form className='lg:flex  hidden w-[25rem] justify-between rounded-md border border-[#5d5d5d] p-2'>
+            <form className='lg:flex hidden w-[35rem] justify-between rounded-md border border-[#3b3b3b] py-1 px-2'>
                 <input 
                 type="search" 
                 placeholder='Search for products' 
@@ -16,7 +16,7 @@ const NavBar = () => {
             </form>
 
             <div className='w-[2rem] border border-[#5d5d5d] p-2 cursor-pointer'><img className='transition-all ease-in-out hover:scale-110' src="/Image/cart.svg" alt="" /></div>
-        </nav>
+    </nav>
   )
 }
 

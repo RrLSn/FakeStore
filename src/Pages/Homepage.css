@@ -1,13 +1,13 @@
 .wrapper{
-    @apply min-w-[90vw] min-h-[100vh] p-5 bg-[#171717]
+    @apply min-w-[90vw] min-h-[100vh] py-5 px-5 bg-[#171717]
 }
 
 section{
-    @apply w-full min-h-[80vh] flex lg:flex-row flex-col mt-16 justify-between
+    @apply w-[83vw] m-auto min-h-[80vh] flex lg:flex-row flex-col mt-10 justify-between
 }
 
 .productWrapper{
-    @apply h-[100%] w-[75vw] flex flex-wrap gap-6 justify-center m-auto
+    @apply h-[100%] w-[60vw] flex flex-wrap gap-6 justify-center m-auto
 }
 
 .drop-down{
@@ -35,5 +35,5 @@ section{
 }
 
 .dropped{
-    @apply block absolute z-10
+    @apply block absolute z-10 w-[83vw]
 }
