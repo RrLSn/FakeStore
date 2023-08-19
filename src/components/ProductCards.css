@@ -1,5 +1,5 @@
 .productCard{
-    @apply w-[20rem] h-[26rem] flex flex-col justify-between rounded-lg cursor-pointer text-white bg-black p-5 border-transparent
+    @apply lg:w-[34rem] lg:h-[32rem] w-[20rem] h-[max-content] flex flex-col justify-between rounded-lg cursor-pointer text-white bg-black p-5 border-[1px] border-[#262626]
 }
 
 .productCard:hover{
@@ -7,5 +7,5 @@
 }
 
 .productCard img{
-    @apply w-full h-[20rem] 
+    @apply w-full h-[27rem] object-fill 
 }

@@ -1,0 +1,23 @@
+nav{
+    @apply lg:w-full w-[92vw] flex items-center text-white justify-between
+}
+
+.logo{
+    @apply w-[38px] h-[40px] bg-black flex justify-center items-center rounded-lg border-[1px] border-[#404040]
+}
+
+.navLink{
+    @apply text-[#a3a3a3] w-[6vw] flex justify-between items-center px-2
+}
+
+.navLink a:hover{
+    @apply underline-offset-4 underline
+}
+
+.navLink a:focus{
+    @apply underline-offset-4 underline
+}
+
+.input{
+    @apply bg-transparent focus:outline-none w-full placeholder:text-[#a3a3a3]
+}

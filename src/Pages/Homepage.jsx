@@ -99,51 +99,51 @@ const Homepage = () => {
         <NavBar />
 
         <section>
-            <div className='order-1'>
-                <p className='text-[#5d5d5d] lg:block hidden'>Collections</p>
-                <div className='drop-down' onClick={handleCollectionDropDown}>
-                    <div>{filteredCriteria}</div>
-                    <img src="/Image/arrow-down.svg" alt="arrow" className='w-[5vw]' />
+                <div className='order-1'>
+                    <p className='text-[#5d5d5d] lg:block hidden'>Collections</p>
+                    <div className='drop-down' onClick={handleCollectionDropDown}>
+                        <div>{filteredCriteria}</div>
+                        <img src="/Image/arrow-down.svg" alt="arrow" className='w-[5vw]' />
+                    </div>
+                    <ul className={`collection ${collectionDropDown && 'dropped' }`}>
+                            <li><a href='#' onClick={() => handleFilter("All")}>All</a></li>
+                            <li><a href='#' onClick={() =>handleFilter("men's clothing")}>Men</a></li>
+                            <li><a href='#' onClick={() => handleFilter("women's clothing")}>Women</a></li>
+                            <li><a href='#' onClick={() => handleFilter("electronics")}>Electronics</a></li>
+                            <li><a href='#' onClick={() => handleFilter("jewelry")}>Jewelries</a></li>
+                        </ul>
                 </div>
-                <ul className={`collection ${collectionDropDown ? 'dropped' : ''}`}>
-                        <li><a href='#' onClick={() => handleFilter("All")}>All</a></li>
-                        <li><a href='#' onClick={() =>handleFilter("men's clothing")}>Men</a></li>
-                        <li><a href='#' onClick={() => handleFilter("women's clothing")}>Women</a></li>
-                        <li><a href='#' onClick={() => handleFilter("electronics")}>Electronics</a></li>
-                        <li><a href='#' onClick={() => handleFilter("jewelry")}>Jewelries</a></li>
-                    </ul>
-            </div>
-            
-            <main className='productWrapper lg:order-2 order-3'>
-                {
-                    filteredItems.map((product) => (
-                        <Link to={`/productDetails/${product.id}`} key={product.id}>
-                            <ProductCards
-                                name={product.title}
-                                price={product.price}
-                                image={product.image}
-                                category={product.category}
-                            />
-                        </Link>
-                    ))
-                }
-            </main>
+                
+                <main className='productWrapper lg:order-2 order-3'>
+                    {
+                        filteredItems.map((product) => (
+                            <Link to={`/productDetails/${product.id}`} key={product.id}>
+                                <ProductCards
+                                    name={product.title}
+                                    price={product.price}
+                                    image={product.image}
+                                    category={product.category}
+                                />
+                            </Link>
+                        ))
+                    }
+                </main>
 
-            <div className='lg:order-3 order-2'>
-                <p className='text-[#5d5d5d] lg:block hidden'>Sort by</p>
+                <div className='lg:order-3 order-2'>
+                    <p className='text-[#5d5d5d] lg:block hidden'>Sort by</p>
 
-                <div className='drop-down' onClick={handleSortDropDown}>
-                    <div>{sortCriteria}</div>
-                    <img src="/Image/arrow-down.svg" alt="arrow" className='w-[5vw]' />
+                    <div className='drop-down' onClick={handleSortDropDown}>
+                        <div>{sortCriteria}</div>
+                        <img src="/Image/arrow-down.svg" alt="arrow" className='w-[5vw]' />
+                    </div>
+
+                    <ul className={`sort ${sortDropDown && 'dropped'}`}>
+                            <li><a href='#' onClick={() => handleSort("relevance")}>Relevance</a></li>
+                            <li><a href='#' onClick={() => handleSort("trending")}>Trending</a></li>
+                            <li><a href='#' onClick={() => handleSort("ascPrice")}>Price: Low to High</a></li>
+                            <li><a href='#' onClick={() => handleSort("descPrice")}>Price: High to Low</a></li>
+                        </ul>
                 </div>
-
-                <ul className={`sort ${sortDropDown ? 'dropped': ''}`}>
-                        <li><a href='#' onClick={() => handleSort("relevance")}>Relevance</a></li>
-                        <li><a href='#' onClick={() => handleSort("trending")}>Trending</a></li>
-                        <li><a href='#' onClick={() => handleSort("ascPrice")}>Price: Low to High</a></li>
-                        <li><a href='#' onClick={() => handleSort("descPrice")}>Price: High to Low</a></li>
-                    </ul>
-            </div>
         </section>
     </div>
   )

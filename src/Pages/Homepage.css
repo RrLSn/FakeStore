@@ -3,11 +3,11 @@
 }
 
 section{
-    @apply w-[83vw] m-auto min-h-[80vh] flex lg:flex-row flex-col mt-10 justify-between
+    @apply w-full min-h-[80vh] flex lg:flex-row flex-col mt-10 justify-between lg:px-[12rem]
 }
 
 .productWrapper{
-    @apply h-[100%] w-[60vw] flex flex-wrap gap-6 justify-center m-auto
+    @apply h-[100%] w-[76vw] flex flex-wrap gap-6 justify-center m-auto
 }
 
 .drop-down{
@@ -16,7 +16,7 @@ section{
 
 .collection, 
 .sort{
-    @apply text-white lg:w-[10vw] h-[25vh] w-[92vw] lg:bg-transparent bg-black lg:p-2 hidden lg:block p-3
+    @apply text-white lg:w-[8vw] h-[25vh] w-[92vw] lg:bg-transparent bg-black lg:p-2 hidden lg:block p-0
 }
 
 .collection li, 
