@@ -1,5 +1,5 @@
 nav{
-    @apply lg:w-full w-[92vw] flex items-center text-white justify-between
+    @apply lg:w-full w-[92vw] h-[3rem]  flex items-center text-white justify-between
 }
 
 .logo{
@@ -7,7 +7,7 @@ nav{
 }
 
 .navLink{
-    @apply text-[#a3a3a3] w-[6vw] flex justify-between items-center px-2
+    @apply text-[#a3a3a3] w-[6vw] lg:flex justify-between items-center px-2 hidden
 }
 
 .navLink a:hover{

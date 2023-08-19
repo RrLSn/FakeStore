@@ -31,21 +31,15 @@ const ProductDetails = () => {
       <NavBar />
   
       <main className='detailsWrapper'>
-        <div className='lg:w-[40vw] lg:h-full p-4 w-full overflow-hidden h-full flex justify-center items-center'>
-          <div className=' w-[23rem] h-[30rem] flex justify-center overflow-hidden'>
-          <img src={products.image} alt="Product's Image" />
+        <div className='lg:w-[50vw] lg:h-full p-4 w-full overflow-hidden h-full flex justify-center lg:py-[3rem]'>
+          <div className=' lg:w-[37rem] w-[20rem] lg:h-[40rem] h-[25rem]'>
+            <img src={products.image} alt="Product's Image" />
           </div>
         </div>
 
         <div className='productInfo'>
           <div className='border-b pb-5 border-[#5d5d5d]'>
-            <div className='lg:flex items-center justify-between'>
-              <h1>{products.title}</h1>
-              <div className='w-[max-content] h-[2rem] px-5 py-1 bg-slate-600 rounded-md text-white text-center lg:mb-0 my-4'>
-                <p>{products.category}</p>
-              </div>
-            </div>
-
+            <h1>{products.title}</h1>
             <div className='w-[7rem] p-2 bg-blue-700 text-center rounded-full'><p>${products.price}USD</p></div>
           </div>
 
