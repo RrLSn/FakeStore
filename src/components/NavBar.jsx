@@ -1,5 +1,5 @@
 import './NavBar.css'
-
+import { Link } from 'react-router-dom'
 
 const NavBar = (props) => {
 
@@ -7,9 +7,9 @@ const NavBar = (props) => {
 
   return (
     <nav>
-      <div className="w-[15vw] lg:hidden flex justify-start">
-        <div className='w-[2.5rem] border border-[#404040] rounded-md p-3 cursor-pointer'><img className='transition-all ease-in-out hover:scale-110' src="/Image/menu.svg" alt="" /></div>
-      </div>
+      <Link to={'/Modal'} className="w-[15vw] lg:hidden flex justify-start">
+        <div className='w-[2.5rem] h-[2.5rem] border border-[#404040] rounded-md p-3 cursor-pointer'><img className='transition-all ease-in-out hover:scale-110' src="/Image/menu.svg" alt="" /></div>
+      </Link>
 
       <div className="flex gap-4">
         <a href="/" className="flex gap-2 items-center">
@@ -36,7 +36,7 @@ const NavBar = (props) => {
       </form>
 
       <div className="w-[15vw] flex justify-end">
-        <div className='w-[2.5rem] border border-[#404040] rounded-md p-3 cursor-pointer'><img className='transition-all ease-in-out hover:scale-110' src="/Image/cart.svg" alt="" /></div>
+        <div className='w-[2.5rem] h-[2.5rem] border border-[#404040] rounded-md p-3 cursor-pointer'><img className='transition-all ease-in-out hover:scale-110' src="/Image/cart.svg" alt="" /></div>
       </div>
     </nav>
   )
