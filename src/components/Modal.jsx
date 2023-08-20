@@ -1,11 +1,22 @@
 import React from 'react'
-// import { animate } from 'framer-motion'
+import { motion } from 'framer-motion'
 import './Modal.css'
 
-const Modal = () => {
+const Modal = (props) => {
+    const { setShowModal,handleFilter } = props
+
+    const modalVariants = {
+        hidden: {x:-300},
+        visible: {x: 0, transition: {duration: 0.5, stifness: 150}}
+    }
+
   return (
-    <div className="wrapper">
-      <div className="w-[2.7rem] h-[2.7rem] flex justify-end">
+    <motion.div
+    variants={modalVariants}
+    initial="hidden"
+    animate="visible" 
+    className="wrapper">
+      <div className="w-[2.7rem] h-[2.7rem] flex justify-end" onClick={() => setShowModal(false)}>
         <div className='w-[2.7rem] border border-[#404040] rounded-md p-2 cursor-pointer'><img className='transition-all ease-in-out hover:scale-110' src="/Image/close.svg" alt="" /></div>
       </div>
 
@@ -23,7 +34,7 @@ const Modal = () => {
             <a href="#" onClick={() => handleFilter("men's clothing")}>Men</a>
             <a href="#" onClick={() => handleFilter("women's clothing")}>Women</a>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

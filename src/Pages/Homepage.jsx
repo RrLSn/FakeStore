@@ -5,6 +5,7 @@ import ProductCards from '../components/ProductCards'
 import { datas } from '../data'
 import { Link } from 'react-router-dom'
 import NavBar from '../components/NavBar'
+import Modal from '../components/modal'
 
 const Homepage = () => {
     
@@ -16,7 +17,7 @@ const Homepage = () => {
     
     const [collectionDropDown, setCollectionDropDown] = useState(false)
     const [sortDropDown, setSortDropDown] = useState(false)
-
+    const [showModal, setShowModal] = useState(false)
     
     const fetchData = async() => {
         try {
@@ -96,7 +97,7 @@ const Homepage = () => {
 
   return (
     <div className="wrapper">
-        <NavBar handleFilter={handleFilter} />
+        <NavBar handleFilter={handleFilter} setShowModal={setShowModal} />
 
         <section>
                 <div className='order-1'>
@@ -144,6 +145,9 @@ const Homepage = () => {
                     }
                 </main>
         </section>
+        {
+            showModal && <Modal setShowModal={setShowModal} handleFilter={handleFilter} />
+        }
     </div>
   )
 }
