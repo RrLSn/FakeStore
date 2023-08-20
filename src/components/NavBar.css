@@ -1,5 +1,5 @@
 nav{
-    @apply lg:w-full w-[92vw] h-[3rem]  flex items-center text-white justify-between
+    @apply lg:w-full w-[92vw] h-[3rem] flex items-center text-white justify-between
 }
 
 .logo{

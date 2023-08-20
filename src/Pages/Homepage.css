@@ -11,12 +11,12 @@ section{
 }
 
 .drop-down{
-    @apply lg:hidden flex justify-between rounded-md w-full border border-[#5d5d5d] h-10 py-2 px-4 text-white mb-8 relative z-0
+    @apply lg:hidden flex justify-between rounded-md w-full border border-[#5d5d5d] h-10 py-2 px-4 text-white relative z-0
 }
 
 .collection, 
 .sort{
-    @apply text-white lg:w-[8vw] h-[25vh] w-[92vw] lg:bg-transparent bg-black lg:p-2 hidden lg:block p-0
+    @apply text-white lg:w-[8vw] h-[max-content] w-[92vw] lg:p-2 hidden lg:block p-0
 }
 
 .collection li, 
@@ -35,5 +35,13 @@ section{
 }
 
 .dropped{
-    @apply block absolute z-10 w-[83vw]
+    @apply block absolute z-10 w-[90.5vw] px-5 py-2 bg-black
+}
+
+.dropped a:hover{
+    @apply underline-offset-4 underline
+}
+
+.dropped a:focus{
+    @apply underline-offset-4 underline
 }

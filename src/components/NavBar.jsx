@@ -1,22 +1,28 @@
 import './NavBar.css'
 
 
-const NavBar = () => {
+const NavBar = (props) => {
+
+  const { handleFilter } = props
 
   return (
     <nav>
+      <div className="w-[15vw] lg:hidden flex justify-start">
+        <div className='w-[2.5rem] border border-[#404040] rounded-md p-3 cursor-pointer'><img className='transition-all ease-in-out hover:scale-110' src="/Image/menu.svg" alt="" /></div>
+      </div>
+
       <div className="flex gap-4">
         <a href="/" className="flex gap-2 items-center">
           <div className="logo">
             <svg xmlns="http://www.w3.org/2000/svg" aria-label="Acme Store logo" viewBox="0 0 32 28" class="fill-black dark:fill-white h-[16px] w-[16px]"><path d="M21.5758 9.75769L16 0L0 28H11.6255L21.5758 9.75769Z"></path><path d="M26.2381 17.9167L20.7382 28H32L26.2381 17.9167Z"></path></svg>
           </div>
-          <h1 className='text-[#a3a3a3] font-semibold text-md tracking-tight'>FAKESTORE</h1>
+          <h1 className='text-[#a3a3a3] font-bold text-md tracking-tight'>FAKESTORE</h1>
         </a>
 
         <div className="navLink text-md">
-            <a href="">All</a>
-            <a href="">Men</a>
-            <a href="">Women</a>
+            <a href="#" onClick={() => handleFilter("All")}>All</a>
+            <a href="#" onClick={() => handleFilter("men's clothing")}>Men</a>
+            <a href="#" onClick={() => handleFilter("women's clothing")}>Women</a>
         </div>
       </div>
             

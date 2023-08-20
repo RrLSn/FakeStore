@@ -96,7 +96,7 @@ const Homepage = () => {
 
   return (
     <div className="wrapper">
-        <NavBar />
+        <NavBar handleFilter={handleFilter} />
 
         <section>
                 <div className='order-1'>
@@ -113,8 +113,23 @@ const Homepage = () => {
                             <li><a href='#' onClick={() => handleFilter("jewelry")}>Jewelries</a></li>
                         </ul>
                 </div>
+                <div className='lg:order-3 order-2'>
+                    <p className='text-[#5d5d5d] lg:block hidden'>Sort by</p>
+
+                    <div className='drop-down mt-8' onClick={handleSortDropDown}>
+                        <div>{sortCriteria}</div>
+                        <img src="/Image/arrow-down.svg" alt="arrow" className='w-[5vw]' />
+                    </div>
+
+                    <ul className={`sort ${sortDropDown && 'dropped'}`}>
+                            <li><a href='#' onClick={() => handleSort("relevance")}>Relevance</a></li>
+                            <li><a href='#' onClick={() => handleSort("trending")}>Trending</a></li>
+                            <li><a href='#' onClick={() => handleSort("ascPrice")}>Price: Low to High</a></li>
+                            <li><a href='#' onClick={() => handleSort("descPrice")}>Price: High to Low</a></li>
+                        </ul>
+                </div>
                 
-                <main className='productWrapper lg:order-2 order-3'>
+                <main className='productWrapper lg:order-2 order-3 mt-8'>
                     {
                         filteredItems.map((product) => (
                             <Link to={`/productDetails/${product.id}`} key={product.id}>
@@ -128,22 +143,6 @@ const Homepage = () => {
                         ))
                     }
                 </main>
-
-                <div className='lg:order-3 order-2'>
-                    <p className='text-[#5d5d5d] lg:block hidden'>Sort by</p>
-
-                    <div className='drop-down' onClick={handleSortDropDown}>
-                        <div>{sortCriteria}</div>
-                        <img src="/Image/arrow-down.svg" alt="arrow" className='w-[5vw]' />
-                    </div>
-
-                    <ul className={`sort ${sortDropDown && 'dropped'}`}>
-                            <li><a href='#' onClick={() => handleSort("relevance")}>Relevance</a></li>
-                            <li><a href='#' onClick={() => handleSort("trending")}>Trending</a></li>
-                            <li><a href='#' onClick={() => handleSort("ascPrice")}>Price: Low to High</a></li>
-                            <li><a href='#' onClick={() => handleSort("descPrice")}>Price: High to Low</a></li>
-                        </ul>
-                </div>
         </section>
     </div>
   )
