@@ -39,6 +39,7 @@ const Homepage = () => {
             setFilteredItems(filtered)
             setFilteredCriteria("Men")
             setCollectionDropDown(false)
+            setShowModal(false)
         } else if (criterion === "jewelry"){
             const filtered = products.filter((product) => product.category === criterion)
             setFilteredItems(filtered)
@@ -49,6 +50,7 @@ const Homepage = () => {
             setFilteredItems(filtered)
             setFilteredCriteria("Women")
             setCollectionDropDown(false)
+            setShowModal(false)
         } else if (criterion === "electronics"){
             const filtered = products.filter((product) => product.category === criterion)
             setFilteredItems(filtered)
@@ -58,6 +60,7 @@ const Homepage = () => {
             setFilteredItems(products)
             setFilteredCriteria("All")
             setCollectionDropDown(false)
+            setShowModal(false)
         }
     }
 
@@ -145,9 +148,11 @@ const Homepage = () => {
                     }
                 </main>
         </section>
-        {
-            showModal && <Modal setShowModal={setShowModal} handleFilter={handleFilter} />
-        }
+        {/* <div>
+            {
+                showModal && <Modal setShowModal={setShowModal} handleFilter={handleFilter} />
+            }
+        </div> */}
     </div>
   )
 }
