@@ -99,7 +99,10 @@ const Homepage = () => {
    }
 
   return (
-    <div className="wrapper">
+    <div className="min-w-[90vw] min-h-[100vh] py-5 px-5 bg-[#171717]">
+        {
+            showModal ? <Modal setShowModal={setShowModal} handleFilter={handleFilter} /> :
+        <div>
         <NavBar handleFilter={handleFilter} setShowModal={setShowModal} />
 
         <section>
@@ -148,11 +151,8 @@ const Homepage = () => {
                     }
                 </main>
         </section>
-        {/* <div>
-            {
-                showModal && <Modal setShowModal={setShowModal} handleFilter={handleFilter} />
-            }
-        </div> */}
+        </div>
+    }
     </div>
   )
 }

@@ -7,7 +7,7 @@ const Modal = (props) => {
 
     const modalVariants = {
         hidden: {x:-300},
-        visible: {x: 0, transition: {duration: 0.5, stifness: 150}}
+        visible: {x: 0, transition: {duration: 0.3, stifness: 150}}
     }
 
   return (

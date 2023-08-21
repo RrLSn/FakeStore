@@ -1,6 +1,5 @@
 .wrapper{
-    background-color: rgb(23 23 23/var(1));
-    @apply w-screen h-screen fixed top-0 bottom-0 left-0 right-0 lg:hidden block
+    @apply w-screen h-screen fixed top-0 bottom-0 left-0 right-0 lg:hidden block bg-[#000000] p-5 z-30
 }
 
 .input{
