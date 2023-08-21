@@ -40,10 +40,10 @@ const Homepage = () => {
             setFilteredCriteria("Men")
             setCollectionDropDown(false)
             setShowModal(false)
-        } else if (criterion === "jewelry"){
+        } else if (criterion === "jewelery"){
             const filtered = products.filter((product) => product.category === criterion)
             setFilteredItems(filtered)
-            setFilteredCriteria("Jewelries")
+            setFilteredCriteria("Jewelery")
             setCollectionDropDown(false)
         } else if (criterion === "women's clothing"){
             const filtered = products.filter((product) => product.category === criterion)
@@ -117,7 +117,7 @@ const Homepage = () => {
                             <li><a href='#' onClick={() =>handleFilter("men's clothing")}>Men</a></li>
                             <li><a href='#' onClick={() => handleFilter("women's clothing")}>Women</a></li>
                             <li><a href='#' onClick={() => handleFilter("electronics")}>Electronics</a></li>
-                            <li><a href='#' onClick={() => handleFilter("jewelry")}>Jewelries</a></li>
+                            <li><a href='#' onClick={() => handleFilter("jewelery")}>Jewelries</a></li>
                         </ul>
                 </div>
                 <div className='lg:order-3 order-2'>

@@ -14,8 +14,11 @@
   - React-Router-Dom
 
   [Preview live](https://regal-meerkat-a806fb.netlify.app/)
-  ![Screenshot](/public/Image/Screenshot%202023-08-07%20141307.png)
-  ![Screenshot](/public/Image/Screenshot%202023-08-07%20135629.png)
+  ![Screenshot](/public/Image/sc1.png)
+  ![Screenshot](/public/Image/sc2.png)
+  ![Screenshot](/public/Image/sc3.png)
+  ![Screenshot](/public/Image/sc4.png)
+  ![Screenshot](/public/Image/sc5.png)
 
 # REFERENCE
   [Inspired by ACME STORE](https://demo.vercel.store/search)
