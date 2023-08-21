@@ -5,7 +5,7 @@ import ProductCards from '../components/ProductCards'
 import { datas } from '../data'
 import { Link } from 'react-router-dom'
 import NavBar from '../components/NavBar'
-import Modal from '../components/modal'
+import Modal from '../components/Modal'
 
 const Homepage = () => {
     
