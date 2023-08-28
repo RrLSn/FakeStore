@@ -1,13 +1,10 @@
-.wrapper{
-    /* @apply  */
-}
 
 section{
-    @apply w-full min-h-[80vh] flex lg:flex-row flex-col lg:mt-6 mt-5 justify-between lg:px-[12rem]
+    @apply w-full min-h-[80vh] flex lg:flex-row flex-col lg:mt-6 mt-5 justify-between lg:px-[5rem]
 }
 
 .productWrapper{
-    @apply h-[100%] w-[76vw] flex flex-wrap gap-6 justify-center m-auto
+    @apply h-[100%] w-[80vw] flex flex-wrap justify-center m-auto gap-3
 }
 
 .drop-down{

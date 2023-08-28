@@ -1,5 +1,5 @@
 .productCard{
-    @apply w-[25rem] lg:h-[28rem] h-[25rem] flex flex-col justify-between rounded-[8px] cursor-pointer text-white bg-black lg:px-10 lg:pt-12 lg:pb-5 px-8 py-5 border-[1px] border-[#262626]
+    @apply w-[23rem] lg:h-[28rem] h-[25rem] flex flex-col justify-between rounded-[8px] cursor-pointer text-white bg-black lg:px-6 lg:pt-12 lg:pb-5 px-8 py-5 border-[1px] border-[#262626]
 }
 
 .productCard:hover{
