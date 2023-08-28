@@ -136,7 +136,7 @@ const Homepage = () => {
                         </ul>
                 </div>
                 
-                <main className='productWrapper lg:order-2 order-3 mt-8'>
+                <main className='productWrapper lg:order-2 order-3'>
                     {
                         filteredItems.map((product) => (
                             <Link to={`/productDetails/${product.id}`} key={product.id}>

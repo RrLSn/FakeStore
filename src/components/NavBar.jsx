@@ -25,7 +25,7 @@ const NavBar = (props) => {
         </div>
       </div>
             
-      <form className='lg:flex hidden w-[51rem] justify-between rounded-md border-[1px] border-[#262626] py-1 px-3'>
+      <form className='lg:flex hidden w-[30rem] justify-between rounded-md border-[1px] border-[#262626] py-1 px-3'>
           <input 
           type="search" 
           placeholder='Search for products...' 
