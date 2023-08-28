@@ -4,7 +4,7 @@ section{
 }
 
 .productWrapper{
-    @apply h-[100%] w-[80vw] flex flex-wrap justify-center m-auto gap-3
+    @apply h-[100%] w-[80vw] flex flex-wrap justify-center m-auto gap-3 lg:mt-0 mt-4
 }
 
 .drop-down{
@@ -32,7 +32,7 @@ section{
 }
 
 .dropped{
-    @apply block absolute z-10 w-[90.5vw] px-5 py-2 bg-black
+    @apply block absolute z-30 w-[90.5vw] px-5 py-2 bg-black
 }
 
 .dropped a:hover{
