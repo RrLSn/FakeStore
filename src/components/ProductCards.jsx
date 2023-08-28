@@ -14,7 +14,7 @@ const ProductCards = (props) => {
    
   return (
             <div className='productCard'>
-                <div className='flex justify-center overflow-hidden'>
+                <div className='w-[20rem] h-[25rem] overflow-hidden flex justify-center items-center relative z-20'>
                     <animated.img
                     src={image}
                     style={isHovereProps}
@@ -24,9 +24,9 @@ const ProductCards = (props) => {
                     />
                 </div>
 
-                <div className='w-[max-content] flex gap-3 rounded-full border border-[#5d5d5d] text-[0.9rem] font-semibold items-center lg:py-2 py-1 px-2 tracking-tight'>
+                <div className='w-[max-content] flex gap-3 rounded-full border border-[#5d5d5d] text-[0.9rem] font-semibold items-center lg:py-2 py-1 px-2 tracking-tight z-10'>
                     <p>{ fullstring === false? truncate(name) : name }</p>
-                    <p className='lg:w-[4vw] w-[max-content] bg-blue-600 rounded-full text-center flex justify-center lg:px-1 py-1 px-2'>${price}<span className='lg:block hidden'>USD</span><span></span></p>
+                    <p className='w-[max-content] bg-blue-600 rounded-full text-center flex justify-center lg:px-1 py-1 px-2'>${price}<span className='lg:block hidden'>USD</span><span></span></p>
                 </div>
             </div>
   )

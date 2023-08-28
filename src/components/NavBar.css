@@ -7,7 +7,7 @@ nav{
 }
 
 .navLink{
-    @apply text-[#a3a3a3] w-[6vw] lg:flex justify-between items-center px-2 hidden
+    @apply text-[#a3a3a3] w-[8vw] lg:flex justify-between items-center px-2 hidden
 }
 
 .navLink a:hover{
